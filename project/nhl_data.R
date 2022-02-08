@@ -26,5 +26,5 @@ for (i in seq_along(files_skaters)){
   } else result <- dat
 }
 
-write_csv(df_goalies, file = "project/data/goalies.csv")
-write_csv(result, file = "project/data/skaters.csv")
+write.csv(df_goalies, file = "project/data/goalies.csv", row.names = F)
+write.csv(result, file = "project/data/skaters.csv", row.names = F)
